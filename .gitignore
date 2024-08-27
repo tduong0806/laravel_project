@@ -8,6 +8,10 @@
 .env
 .env.backup
 .env.production
+<<<<<<< HEAD
+=======
+.phpactor.json
+>>>>>>> PR_branch
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
@@ -17,6 +21,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+<<<<<<< HEAD
 .DS_Store
 /coverage
 /.vagrant
@@ -30,3 +35,5 @@ Vagrantfile
 !.env.example
 common.env
 *~
+=======
+>>>>>>> PR_branch

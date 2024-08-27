@@ -30,7 +30,12 @@ return [
     | your mailers below. You may also add additional mailers if needed.
     |
     | Supported: "smtp", "sendmail", "mailgun", "ses", "ses-v2",
+<<<<<<< HEAD
     |            "postmark", "log", "array", "failover", "roundrobin"
+=======
+    |            "postmark", "resend", "log", "array",
+    |            "failover", "roundrobin"
+>>>>>>> PR_branch
     |
     */
 
@@ -45,7 +50,11 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
+<<<<<<< HEAD
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
+=======
+            'local_domain' => env('MAIL_EHLO_DOMAIN', parse_url(env('APP_URL', 'http://localhost'), PHP_URL_HOST)),
+>>>>>>> PR_branch
         ],
 
         'ses' => [
@@ -60,6 +69,13 @@ return [
             // ],
         ],
 
+<<<<<<< HEAD
+=======
+        'resend' => [
+            'transport' => 'resend',
+        ],
+
+>>>>>>> PR_branch
         'sendmail' => [
             'transport' => 'sendmail',
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),

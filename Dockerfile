@@ -34,4 +34,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
+<<<<<<< HEAD
 EXPOSE 80/tcp
+=======
+EXPOSE 82/tcp
+>>>>>>> PR_branch
